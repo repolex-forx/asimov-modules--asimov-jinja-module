@@ -1,0 +1,17 @@
+[2026-09-28T07:12:24Z] === ENRICH ITERATION 1 START | repo=asimov-modules/asimov-jinja-module sha=fc803591 ===
+[2026-09-28T07:12:24Z] [iter=1] PHASE START: enrich repo=asimov-modules/asimov-jinja-module sha=fc803591 runlog=/home/runner/work/forx/forx/storage/aggregate/lsp/logs/fc803591-enrich-iter-001.log output=/home/runner/work/forx/forx/storage/aggregate/lsp/fc80359120b3a3fe4ab3d65dfd97430e026f7c13.nq.gz
+[2026-09-28T07:12:32Z] [iter=1] Step 1: Loading AST into disk-backed store mem_mb=79 MB
+[2026-09-28T07:12:32Z] [iter=1] AST store loaded triples=4376 load_secs=0 mem_mb=93 MB
+[2026-09-28T07:12:32Z] [iter=1] Step 2: Finding LSP targets mem_mb=93 MB
+[2026-09-28T07:12:32Z] [iter=1] LSP targets found call_sites=53 imports=4 extends=0 implements=0 secs=0
+[2026-09-28T07:12:32Z] [iter=1] Step 2.7: Building position index (one-shot, shared across resolvers) mem_mb=94 MB
+[2026-09-28T07:12:32Z] [iter=1] Position index built positions=301 nodes_with_types=387 secs=0 mem_mb=94 MB
+[2026-09-28T07:12:32Z] [iter=1] Step 3: Starting LSP resolution mem_mb=94 MB already_completed_types=[] already_completed_files=0
+[2026-09-28T07:12:32Z] [iter=1] Resolving target type target_type=call_site count=53
+[2026-09-28T07:13:04Z] [iter=1] Target type resolved target_type=call_site resolved=17 errors=53 secs=31 mem_mb=94 MB
+[2026-09-28T07:13:04Z] [iter=1] Resolving target type target_type=import_statement count=4
+[2026-09-28T07:13:05Z] [iter=1] HEARTBEAT target_type=import_statement elapsed_min=0.7 files_done=0 resolved=0 errors=0 current=src/runner/main.rs
+[2026-09-28T07:13:10Z] [iter=1] Target type resolved target_type=import_statement resolved=4 errors=0 secs=6 mem_mb=94 MB
+[2026-09-28T07:13:18Z] [iter=1] Step 5: Writing final enrichment file triples=284
+[2026-09-28T07:13:18Z] [iter=1] Enrichment file written path=/home/runner/work/forx/forx/storage/aggregate/lsp/fc80359120b3a3fe4ab3d65dfd97430e026f7c13.nq.gz size_kb=3
+[2026-09-28T07:13:18Z] [iter=1] PHASE END: enrich elapsed_s=54 elapsed_min=0.9 total_triples=284
